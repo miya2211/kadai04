@@ -11,7 +11,7 @@ public class Main {
         dogList.add("コーギー");
         dogList.add("ジャックラッセルテリア");
         //上記リスト内からのテリア犬リスト
-        List<String> terrierDog = dogList.stream().filter(terrier -> terrier.contains("テリア")).toList();
+        List<String> terrierDog = dogList.stream().filter(dog -> dog.contains("テリア")).toList();
 
         System.out.println("【犬種リスト】");
         dogList.forEach(System.out::println);
